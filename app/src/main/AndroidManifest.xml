@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.study">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".servicetest.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Main3Activity" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".chat.chatActivity" />
+        <activity android:name=".file.Main4Activity" />
+        <activity android:name=".SharedPreferencesTest.Main5Activity" />
+        <activity android:name=".SQLite.Main6Activity" />
+        <activity android:name=".Di9zhang.Main7Activity" />
+        <activity android:name=".Di9zhang.Main8Activity" />
+        <activity android:name=".AndroidThreadTest.Main9Activity" />
+        <activity android:name=".servicetest.Main10Activity"></activity>
+        <activity
+            android:name=".UI.Main11Activity"
+            android:label="Supreme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UI.FruitActivity"></activity>
+    </application>
+
+</manifest>
